@@ -1,0 +1,38 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+input GetPaymentInput {
+  customerName: String!
+}
+
+type PaymentAttributes {
+  type: String
+  amount: Int
+  customerName: String
+  oldCustomerBalance: Int
+  newCustomerBalance: Int
+  destinationName: String
+  oldDestinationBalance: Int
+  newDestinationBalance: Int
+}
+
+input Input {
+  type: String
+  amount: Int
+  customerName: String
+  oldCustomerBalance: Int
+  newCustomerBalance: Int
+  destinationName: String
+  oldDestinationBalance: Int
+  newDestinationBalance: Int
+}
+
+type Query {
+  getPaymentAttributes(input: GetPaymentInput!): String
+}
+
+type Mutation {
+  PostPaymentActivity(input: Input!):PaymentAttributes!
+}
