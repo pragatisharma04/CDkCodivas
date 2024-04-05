@@ -9,24 +9,24 @@ input GetPaymentInput {
 
 type PaymentAttributes {
   type: String
-  amount: Int
+  amount: Float
   customerName: String
-  oldCustomerBalance: Int
-  newCustomerBalance: Int
+  oldCustomerBalance: Float
+  newCustomerBalance: Float
   destinationName: String
-  oldDestinationBalance: Int
-  newDestinationBalance: Int
+  oldDestinationBalance: Float
+  newDestinationBalance: Float
 }
 
 input Input {
   type: String
-  amount: Int
+  amount: Float
   customerName: String
-  oldCustomerBalance: Int
-  newCustomerBalance: Int
+  oldCustomerBalance: Float
+  newCustomerBalance: Float
   destinationName: String
-  oldDestinationBalance: Int
-  newDestinationBalance: Int
+  oldDestinationBalance: Float
+  newDestinationBalance: Float
 }
 
 type Query {

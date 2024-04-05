@@ -35,7 +35,7 @@ export interface StageConfig {
 }
 
 // TODO: update
-export const DEVELOPER_ACCOUNT_ID_PLACEHOLDER = '381491998791';
+export const DEVELOPER_ACCOUNT_ID_PLACEHOLDER = '785567567155';
 
 export const devStage: StageConfig = {
   stage: 'test',

@@ -125,7 +125,7 @@ export class ServiceStack extends Stack {
     CodivasLambdaRole.addToPolicy(
       new PolicyStatement({
         effect: Effect.ALLOW,
-        resources: ["arn:aws:dynamodb:ap-south-1:381491998791:table/PaymentAttributeTable"],
+        resources: ["arn:aws:dynamodb:ap-south-1:785567567155:table/PaymentAttributeTable"],
         actions: ['dynamodb:PutItem', 'dynamodb:GetItem', 'dynamodb:UpdateItem', 'dynamodb:DeleteItem', 'dynamodb:Query'],
       }),
     );

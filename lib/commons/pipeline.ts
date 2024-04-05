@@ -7,7 +7,7 @@ import { App } from 'aws-cdk-lib';
 function createServiceStack(stageConfig: StageConfig, app: App) {
   const stack = new ServiceStack(app, `${APP_NAME}-${stageConfig.stage}`, {
     stage: "test",
-    accountId: "381491998791",
+    accountId: "785567567155",
     region: "ap-south-1",
   });
   return stack;
